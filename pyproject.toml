@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "traceloom"
+version = "0.1.0"
+description = "Local agent trace debugging with progress-aware loop detection"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+traceloom = "traceloom.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["traceloom*"]
